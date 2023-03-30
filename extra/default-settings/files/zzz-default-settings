@@ -3,13 +3,14 @@
 uci set luci.main.lang=zh_cn
 uci commit luci
 
-delete system.ntp.server
-add_list system.ntp.server='ntp.tencent.com'
-add_list system.ntp.server='ntp1.aliyun.com'
-add_list system.ntp.server='ntp.ntsc.ac.cn'
-add_list system.ntp.server='cn.ntp.org.cn'
 uci set system.@system[0].timezone=CST-8
 uci set system.@system[0].zonename=Asia/Shanghai
+uci set system.ntp.enable_server='1'
+uci delete system.ntp.server
+uci add_list system.ntp.server='ntp.tencent.com'
+uci add_list system.ntp.server='ntp1.aliyun.com'
+uci add_list system.ntp.server='ntp.ntsc.ac.cn'
+uci add_list system.ntp.server='cn.ntp.org.cn'
 uci commit system
 
 uci set fstab.@global[0].anon_mount=1
