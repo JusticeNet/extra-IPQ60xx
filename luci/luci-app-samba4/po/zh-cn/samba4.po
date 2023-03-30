@@ -110,7 +110,7 @@ msgstr "网络共享"
 
 #: applications/luci-app-samba4/luasrc/model/cbi/samba4.lua:58
 msgid "Path"
-msgstr "路径"
+msgstr "目录"
 
 #: applications/luci-app-samba4/luasrc/model/cbi/samba4.lua:52
 msgid ""
@@ -151,3 +151,15 @@ msgstr "VFS 对象"
 #: applications/luci-app-samba4/luasrc/model/cbi/samba4.lua:13
 msgid "Workgroup"
 msgstr "工作组"
+
+#~ msgid "Browseable"
+#~ msgstr "可浏览"
+
+#~ msgid "Mask for new directories"
+#~ msgstr "新目录权限掩码"
+
+#~ msgid "Mask for new files"
+#~ msgstr "新文件权限掩码"
+
+#~ msgid "Physical Path"
+#~ msgstr "物理路径"
